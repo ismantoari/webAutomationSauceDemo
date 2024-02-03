@@ -1,5 +1,5 @@
-@web
 Feature: check out
+  @web
   @checkout
   Scenario: user check out product Sauce Labs Bolt T-Shirt after add to cart
     # Precondition: user already login and atc

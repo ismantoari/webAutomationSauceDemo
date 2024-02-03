@@ -1,8 +1,6 @@
-@web
-
 Feature: cart page
-
-  @chartPage
+  @web
+  @cartpage
   Scenario: user check shopping cart to confirm product Sauce Labs Bolt T-Shirt that already added to cart
     # Precondition: user already login and atc
     Given user is on login page
@@ -13,5 +11,4 @@ Feature: cart page
   # test chart page
     When user click shopping cart icon on homepage
     Then user is on shopping cart page
-
 

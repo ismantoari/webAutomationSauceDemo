@@ -1,7 +1,5 @@
-@web
 Feature: Login
-
-  #@web
+  @web
   @login
   Scenario Outline: Login using valid username and password
     Given user is on login page

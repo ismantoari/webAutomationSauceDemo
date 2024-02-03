@@ -1,5 +1,5 @@
-@web
-Feature: check out
+Feature: check out overview
+  @web
   @checkoutOverviewFinish
   Scenario: user check out product Sauce Labs Bolt T-Shirt finish
     # Precondition: user already login and atc

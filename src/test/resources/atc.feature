@@ -1,5 +1,4 @@
 Feature: add to cart
-
   @web
   @atc
   Scenario: user do add to cart of Sauce Labs Bolt T-Shirt

@@ -41,4 +41,38 @@ public class HomeStepDef {
     public void userClickShoppingCartIconOnHomepage() {
         homePage.clickShoppingCartIconOnHomePage();
     }
+
+//    @When("user select sort product by name ascending")
+//    public void userSelectSortProductByNameAscending() throws InterruptedException {
+//        homePage.selectSortProductByAscending();
+//        Thread.sleep(200);
+//    }
+    @When("user select sort product by {string}")
+    public void userSelectSortProductBy(String sortCriteria) {
+        homePage.selectSortProductBy(sortCriteria);
+    }
+
+
+    @Then("result product sort by {string}")
+    public void resultProductSortBy(String sortResult) {
+        homePage.assertProductSortBy(sortResult);
+    }
+
+
+
+
+//    @When("user sort product by name descending")
+//    public void userSortProductByNameDescending() throws InterruptedException {
+//        homePage.sortProductByDescending();
+//        Thread.sleep(2000);
+//    }
+//
+//    @Then("product sort Z to A")
+//    public void productSortZToA() {
+//        //assert Z to A
+//    }
+//
+//    @When("user sort product by price ascending")
+//    public void userSortProductByPriceAscending() {
+//    }
 }
